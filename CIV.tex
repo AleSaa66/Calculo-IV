@@ -1,0 +1,79 @@
+\documentclass[letterpaper,12pt]{report} 
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsfonts,amsmath,color,amssymb,float, amsthm}  
+\usepackage{hyperref}
+\usepackage[right=3cm,left=2cm,top=2cm,bottom=2cm,headsep=0.7cm,footskip=0.5cm]{geometry}
+\usepackage{enumerate}
+\usepackage{wrapfig} 
+\usepackage[rflt]{floatflt}
+\usepackage{xcolor} 
+\usepackage{esint}
+\usepackage{cancel}
+\usepackage{listings}
+\usepackage{pstricks, caption}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\Arg}[1]{Arg(#1)}
+
+\decimalpoint
+
+\newtheorem{teorema}{Teorema}[chapter] 
+\newtheorem{ejemplo}{Ejemplo}[chapter] 
+\newtheorem{defi}{Definici\'on}[chapter] 
+\newtheorem{corolario}{Corolario}[chapter] 
+\newtheorem{propo}{Proposición}[chapter] 
+\newtheorem{lema}{Lema}[chapter] 
+\newcommand{\grad}{^{\circ}}
+
+\newlength{\drop}
+
+%%%%%%%%%%%%Fancy Chapters%%%%%%%%%%%%%%%%%
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Lenny]{fncychap}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{titlepage}
+ \drop=0.1\textheight
+    \centering
+    \vspace*{\baselineskip}
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.4pt}\\[\baselineskip]
+    {\scshape\Huge Cálculo IV} \\[0.2\baselineskip]
+    \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+    \rule{\textwidth}{1.6pt}\\[\baselineskip]
+    {\Large Autor: \par}
+{\Large Alejandro Saavedra \par}
+\vfill
+{\large Agosto 2022 \par}
+{\large v1.0 \par}
+\end{titlepage}
+\tableofcontents
+
+\input{./Cap-Numeros-Complejos.tex}
+\input{./Cap-Funciones-Analiticas.tex}
+\input{./Cap-Funciones-Elementales.tex}
+\input{./Cap-Integral.tex}
+\input{./Cap-Series.tex}
+\input{./Cap-Residuos.tex}
+\input{./Cap-Mapeos-Conformes.tex}
+
+\begin{thebibliography}{99}
+
+\bibitem{Agarwal} Agarwal, R. P., Perera, K. y Pinelas, S. (2011). \textit{An Introduction to Complex Analysis}. Springer New York. 
+
+\bibitem{Aguayo} Aguayo, J. (2020). \textit{Apuntes del curso Cálculo IV}. Universidad de Concepción.
+
+\bibitem{Apostol} Apostol, T. M. (1999). \textit{Calculus volumen I} (2da edición). Barcelona, España: Editorial Reverté, S. A.
+
+\bibitem{Asmar} Asmar, N. H y Grafakos, L. (2018). \textit{Complex Analysis with Applications}. Springer Cham. 
+
+\bibitem{Churchill} Churchill, R. V. y Brown J. W. (1992). \textit{Variable compleja y aplicaciones} (5ta edición). Madrid, España: McGraw-Hill.
+
+\bibitem{Marsden} Marsden, J.E. y Hoffman, M.J. (1996). \textit{Análisis básico de variable compleja}. México: Editorial Trillas. 
+
+\end{thebibliography}
+
+\end{document}
